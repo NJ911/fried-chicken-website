@@ -11,7 +11,7 @@ import { Star } from "lucide-react";
 const featuredItems = [
     {
         id: 1,
-        name: "Classic Bucket",
+        name: "Golden Crispy Chicken",
         description: "8 pieces of our signature crispy fried chicken.",
         price: "$24.99",
         image: "/hero_chicken.png",

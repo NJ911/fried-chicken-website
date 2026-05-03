@@ -69,7 +69,7 @@ export function ContactSection() {
                     <div className="space-y-6">
                         <div className="flex flex-col">
                             <span className="font-bold text-lg">Visit Us</span>
-                            <span className="text-muted-foreground">123 Chicken Blvd, Los Angeles, CA</span>
+                            <span className="text-muted-foreground">3499 Kingsway, Vancouver, BC</span>
                         </div>
                         <div className="flex flex-col">
                             <span className="font-bold text-lg">Call Us</span>

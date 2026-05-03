@@ -101,7 +101,7 @@ export default function MenuPage() {
 
                 {/* Grid */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <AnimatePresence mode="popLayout">
+                    <AnimatePresence mode="wait">
                         {filteredItems.map((item) => {
                             // Calculate current price based on selection
                             let currentPrice = item.price;
@@ -116,10 +116,9 @@ export default function MenuPage() {
 
                             return (
                                 <motion.div
-                                    layout
-                                    initial={{ opacity: 0, scale: 0.9 }}
-                                    animate={{ opacity: 1, scale: 1 }}
-                                    exit={{ opacity: 0, scale: 0.9 }}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    exit={{ opacity: 0, y: -20 }}
                                     transition={{ duration: 0.2 }}
                                     key={item.id}
                                     className="group bg-card rounded-2xl overflow-hidden border shadow-sm hover:shadow-md transition-all flex flex-col"
@@ -201,6 +200,6 @@ export default function MenuPage() {
                     </div>
                 )}
             </div>
-        </div>
+        </div >
     );
 }
